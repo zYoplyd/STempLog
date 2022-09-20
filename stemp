@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir stempfile 2> /dev/null
+
 # "Tctl:" This word can be changed to the start text of a line returned by the "sensors" command. example: replace "Tctl:" with "temp1:"
 sensors | grep "Tctl:" > stempfiles/sensors.temp
 sed -i 's/Tctl:         +//g' "stempfiles/sensors.temp"

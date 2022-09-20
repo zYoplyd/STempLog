@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# "Tctl:" This word can be changed to the start text of a line returned by the "sensors" command. example: replace "Tctl:" with "temp1:"
+sensors | grep "Tctl:" > stempfiles/sensors.temp
+sed -i 's/Tctl:         +//g' "stempfiles/sensors.temp"
+########################################################################################################################################
+
+sed -i 's/°C/°C in Tctl/g' "stempfiles/sensors.temp"
+date "+%Y-%m-%d %H:%M:%S %3N -" > stempfiles/sensors.ll
+tr "\n" " " < stempfiles/sensors.ll > stempfiles/sensors.l1
+cat stempfiles/sensors.l1 >> stempfiles/sensors.log
+cat stempfiles/sensors.temp >> stempfiles/sensors.log
+cat cpu/sensors.temp

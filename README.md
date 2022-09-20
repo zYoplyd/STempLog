@@ -10,11 +10,11 @@ O_o
 
 To install it just run the following commands in the terminal
 
-    $ curl https://raw.githubusercontent.com/zYoplyd/STempLog/main/stemp > stemp
+        $ curl https://raw.githubusercontent.com/zYoplyd/STempLog/main/stemp > stemp
 
-    $ chmod +x stemp
+        $ chmod +x stemp
 
-    $ sudo ln -s $PWD/stemp /usr/local/bin/stemp
+        $ sudo ln -s $PWD/stemp /usr/local/bin/stemp
 
 
 

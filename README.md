@@ -28,4 +28,4 @@ To install it just run the following commands in the terminal.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at feedback@ferrada.tk
+If you have any feedback, please reach out to us at javierferrada@yoplyd.org
